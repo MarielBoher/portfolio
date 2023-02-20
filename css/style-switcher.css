@@ -1,0 +1,65 @@
+.style-switcher{
+    position: fixed;
+    right: 0;
+    top: 50px;
+    padding: 15px;
+    width: 180px;
+    background-color:#f9f6f2;
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+}
+.style-switcher.open{
+    transform: translateX(-25px);
+}
+.style-switcher .s-icon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #f9f6f2;
+    color: #302e4d;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+
+    right: 100%;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+.style-switcher .s-icon i{
+    line-height: 40px;
+}
+.style-switcher .day-night{
+    top: 55px;
+}
+.style-switcher .style-switcher-toggler{
+    top: 0;
+}
+
+.style-switcher .colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.style-switcher .colors span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.style-switcher .color-1{
+    background-color: #15c694;
+}
+.style-switcher .color-2{
+    background-color: #abc4ff;
+}
+.style-switcher .color-3{
+    background-color: #e5c185;
+}
+.style-switcher .color-4{
+    background-color: #fb878e;
+}
